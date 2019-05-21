@@ -1,0 +1,11 @@
+html,body {height:100%;background-color:#1890ff;box-sizing:border-box;}
+body {padding:20px;}
+.container-fluid {height:100%;}
+pre:not(:empty) {overflow:auto;background:#24272e;border:1px solid #ccc;font-size:14px;font-family:monospace;padding:10px 10px 20px;box-shadow:-4px 4px 2px 0 rgba(0,0,0,0.3);white-space:pre-wrap;outline:0;color:#fff;}
+.left {height: 100%;overflow: auto;padding-bottom: 10px;}
+.left .controller {background-color:#fff;box-shadow:-4px 4px 2px 0 rgba(0,0,0,0.3);outline:0;border:1px solid #ccc;padding:10px;margin-bottom:20px;}
+.left .item-code {background-color:#fff;box-shadow:-4px 4px 2px 0 rgba(0,0,0,0.3);outline:0;border:1px solid #ccc;padding:10px;}
+.right {background-color:#f0f2f3;padding-top:15px;}
+.right .btnWrapper {width:100%;background-color:#fff;box-shadow:0 8px 20px rgba(143,168,191,0.35);padding-top:10px;padding-bottom:10px;}
+.right .btnWrapper button {margin:0 10px;}
+.right .box .item {width:20%;height:150px;line-height:150px;text-align:center;margin:5px;background-color:#fff;color:#000;box-shadow:0 8px 20px rgba(143,168,191,0.35);cursor: pointer;}
