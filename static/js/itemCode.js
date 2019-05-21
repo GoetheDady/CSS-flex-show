@@ -67,8 +67,18 @@ ItemCode.prototype.setTargetItemCSS = function (index) {
 ItemCode.prototype.setIndexCSS = function (key, value) {
   var _this = this;
   _this.itemCSS[_this.editItemIndex].defaultValue[key] = value;
-  console.log(_this.itemCSS)
   $('.item').eq(_this.editItemIndex).css(_this.itemCSS[_this.editItemIndex].defaultValue)
+}
+
+ItemCode.prototype.resetItemCSS = function () {
+  var _this = this;
+  if (_this.itemCSS.length !== 0) {
+    console.log(this.itemCSS)
+    _.times(_this.itemCSS.length, function (index) {
+      console.log(1)
+      $('.item').eq(index + 1).css(_this.itemCSS[index].defaultValue)
+    })
+  }
 }
 
 ItemCode.prototype.bindEvent = function () {

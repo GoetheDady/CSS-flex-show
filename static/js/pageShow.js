@@ -31,6 +31,8 @@ PageShow.prototype.bindEvent = function () {
     _this.data.items.push(_this.data.items.length + 1);
     itemCode.pushItem(_this.data.items.length - 0);
     _this.render();
+    selectValue.setCSS();
+    itemCode.resetItemCSS();
   }).on('click', '.delete', function () {
     if (_this.data.items.length !== 0) {
       _this.data.items.pop();
@@ -39,6 +41,8 @@ PageShow.prototype.bindEvent = function () {
       itemCode.render();
       itemCode.bindEvent();
       _this.render();
+      selectValue.setCSS();
+      itemCode.resetItemCSS();
     }
   }).on('click', '.item', function () {
     itemCode.setTargetItemCSS($(this).index())
