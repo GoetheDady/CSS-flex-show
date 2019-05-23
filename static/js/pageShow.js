@@ -7,7 +7,7 @@ function PageShow() {
       </div>
       <div class="box" style="display: flex">
         <% _.forEach(items, function(item) { %>
-          <div class="item"><%- item %></div>
+          <div class="item" data-key="<%- item %>"><%- item %></div>
         <% }); %>
       </div>
     </script>

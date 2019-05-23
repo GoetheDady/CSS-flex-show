@@ -73,10 +73,8 @@ ItemCode.prototype.setIndexCSS = function (key, value) {
 ItemCode.prototype.resetItemCSS = function () {
   var _this = this;
   if (_this.itemCSS.length !== 0) {
-    console.log(this.itemCSS)
     _.times(_this.itemCSS.length, function (index) {
-      console.log(1)
-      $('.item').eq(index + 1).css(_this.itemCSS[index].defaultValue)
+      $(`.item[data-key$=${index + 1}]`).css(_this.itemCSS[index].defaultValue)
     })
   }
 }
@@ -84,7 +82,6 @@ ItemCode.prototype.resetItemCSS = function () {
 ItemCode.prototype.bindEvent = function () {
   var _this = this;
   $('.item-code').on('input', 'input', function () {
-    console.log(_this.editItemIndex)
     if (_this.editItemIndex !== '') {
       _this.setIndexCSS($(this).attr('id'), $(this).val());
       codeShow.render(_this.itemCSS[_this.editItemIndex])
