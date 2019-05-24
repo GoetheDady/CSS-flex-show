@@ -6,6 +6,8 @@
 
 [赶紧来看看吧~](https://goethedady.github.io/CSS-flex-show/)
 
+## 如何使用
+![](./markdown/howToUse.png)
 ## 技术
 
 个人认为，这个项目是基于面向对象编程的
